@@ -22,3 +22,13 @@
   <li>Create a DNS A-record on DC-1 for “mainframe” and have it point to DC-1’s Private IP address</li>
   <li>Go back to Client-1 and try to ping it. Observe that it works</li>
 </ol>
+
+<h2>Local DNS Cache Exercise</h2>
+<ol>
+  <li>Go back to DC-1 and change mainframe’s record address to 8.8.8.8</li>
+  <li>Go back to Client-1 and ping “mainframe” again. Observe that it still pings the old address</li>
+  <li>Observe the local dns cache (ipconfig /displaydns)</li>
+  <li>Flush the DNS cache (ipconfig /flushdns).</li>
+  <li>Observe that the cache is empty (ipconfig /displaydns)</li>
+  <li>Attempt to ping “mainframe” again. Observe the address of the new record is showing up</li>
+</ol>
