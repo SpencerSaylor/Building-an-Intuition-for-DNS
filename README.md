@@ -32,3 +32,10 @@
   <li>Observe that the cache is empty (ipconfig /displaydns)</li>
   <li>Attempt to ping “mainframe” again. Observe the address of the new record is showing up</li>
 </ol>
+
+<h2>CNAME Record Exercises</h2>
+<ol>
+  <li>Go back to DC-1 and create a CNAME record that points the host “search” to “www.google.com”</li>
+  <li>Go back to Client-1 and attempt to ping “search”, observe the results of the CNAME record</li>
+  <li>On Client-1, nslookup “search”, observe the results of the CNAME record</li>
+</ol>
